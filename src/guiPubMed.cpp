@@ -473,6 +473,7 @@ void guiPubMed::guiEvent(ofxUIEventArgs &e){
 			ofLogVerbose("guiPubMed")<< "ON ENTER: " << textString[currentSearchBar] << endl;
 		}else if(t->getInputTriggerType() == OFX_UI_TEXTINPUT_ON_FOCUS){
 			//t->setTextString("");
+			t->setTextString("");
 			ofLogVerbose("guiPubMed")<< "ON FOCUS: " << textString[currentSearchBar] << endl;
 		}else if(t->getInputTriggerType() == OFX_UI_TEXTINPUT_ON_UNFOCUS){
 			textString[currentSearchBar]	=	t->getTextString();

@@ -76,6 +76,7 @@ void ofxPubMed::setup(){
 void ofxPubMed::update(){
 	 myGuiPubMed.update();
 }
+
 //--------------------------------------------------------------
 void ofxPubMed::draw(){
     
@@ -209,9 +210,7 @@ void ofxPubMed::keyPressed(int key){
 		//General Request is under construction
 		bHitRequest = false;
 	}
-    
 
-    
     //Reset actual request
     if(key == 127)request="";
 }
